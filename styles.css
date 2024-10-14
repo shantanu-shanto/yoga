@@ -1,0 +1,294 @@
+/* Custom CSS for Yoga Website */
+
+/* Basic Color Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #9392c9; /* Soft Beige */
+    color: #73be1d; /* Dark Slate Gray */
+}
+
+h1, h2, h3 {
+    color: #008080; /* Teal for headings */
+}
+
+a {
+    color: #F08080; /* Light Coral for links */
+}
+
+a:hover {
+    color: #008080; /* Teal on hover */
+}
+
+button {
+    background-color: #FFFACD; /* Lemon Chiffon buttons */
+    border: 1px solid #008080; /* Teal border */
+    color: #2F4F4F; /* Dark text */
+}
+
+button:hover {
+    background-color: #dac1c1; /* Light Coral on hover */
+    color: white;
+}
+
+.card {
+    border: 1px solid #F08080; /* Light Coral border */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 128, 128, 0.3); /* Teal shadow */
+}
+
+footer {
+    background-color: #008080; /* Teal footer */
+    color: #FFFACD; /* Lemon Chiffon text */
+    padding: 20px;
+}
+
+.footer a {
+    color: #FFFACD;
+}
+
+.footer a:hover {
+    color: #F08080;
+}
+
+
+
+
+
+
+#hero {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF921C; /* Orange from your color scheme */
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    color: #ECA427; /* Yellow from your color scheme */
+}
+
+.btn-primary {
+    background-color: #FF921C; /* Orange */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ECA427; /* Yellow */
+}
+/* Custom Navbar Styles (Already added) */
+
+/* About Yoga Section */
+#about-yoga {
+    background-color: #f9f9f9;
+}
+
+#about-yoga p {
+    font-size: 1.2rem;
+}
+
+/* Featured Classes - Card Hover Effect */
+.class-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.class-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover zoom for images */
+.hover-zoom img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-zoom img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonial-card {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer a:hover {
+    color: #FF921C;
+}
+
+/* Featured Classes - Advanced Animation and Hover Effects */
+.class-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.class-card:hover {
+    transform: translateY(-15px) rotateZ(2deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.class-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(111, 93, 212, 0.5); /* Orange overlay */
+    z-index: 1;
+    opacity: 0;
+    animation: hover-glow 0.4s forwards;
+}
+
+@keyframes hover-glow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover zoom effect on images with slight rotation */
+.hover-zoom img {
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-zoom img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Testimonials Section - Advanced Animation */
+.testimonial-card {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    position: relative;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: calc(0.2s * var(--delay)); /* Staggered delay effect */
+}
+
+.testimonial-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 146, 28, 0.1); /* Faint orange bubble */
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-card:hover::after {
+    transform: scale(1.5);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add delay for each testimonial */
+.testimonial-card:nth-child(1) {
+    --delay: 1;
+}
+.testimonial-card:nth-child(2) {
+    --delay: 2;
+}
+.testimonial-card:nth-child(3) {
+    --delay: 3;
+}
+
+/* Featured Classes Section - Load Animation */
+.class-card {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.class-card.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image Hover Effect */
+.hover-zoom img {
+    transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hover-zoom img:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* Testimonials Section - Load Animation */
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.testimonial-card.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Additional delay for staggered effect */
+.testimonial-card:nth-child(1) {
+    transition-delay: 0.8s;
+}
+.testimonial-card:nth-child(2) {
+    transition-delay: 0.8s;
+}
+.testimonial-card:nth-child(3) {
+    transition-delay: 0.8s;
+}
+

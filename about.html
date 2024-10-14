@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Yoga</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="nav.css">
+    
+</head>
+<body>
+   <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="images/Logo.jpg" alt="Logo" class="img-fluid" style="width: 100px;">
+        </a>
+
+        <!-- Navbar Toggle (for mobile view) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="classes.html">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Yoga Gear</a></li>
+                        <li><a class="dropdown-item" href="#">Wellness Products</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Private Sessions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 animate-on-scroll" id="h">About Yoga</h1>
+            <p class="lead animate-on-scroll" id="herop" >Discover the ancient practice for modern well-being</p>
+        </div>
+    </section>
+
+    <!-- About Yoga Section -->
+    <section class="about-yoga-section py-2">
+        <div class="container">
+            <div class="row min-vh-10 d-flex align-items-center justify-content-center">
+                <div class="col-md-6 animate-on-scroll">
+                    <img src="images/about.jpg" class="img-fluid" alt="Yoga Image">
+                </div>
+                <div class="col-md-6 animate-on-scroll" id="H">
+                    <h2>What is Yoga?</h2>
+                    <p>Yoga is an ancient practice that brings together mind, body, and spirit. It includes physical postures, breathing exercises, and meditation, fostering well-being and balance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yoga Philosophy Section -->
+    <section class="yoga-philosophy-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center animate-on-scroll">
+                    <h2 id="ph">Yoga Philosophy</h2>
+                    <p id="pp">Explore the deeper aspects of yoga philosophy, including its origins, practices, and principles. Yoga helps us connect to our inner selves and to the world around us.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Instructors Section -->
+    <section class="instructors-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="animate-on-scroll">Meet Our Instructors</h2>
+                <!-- Instructor Card 1 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card instructor-card hover-card">
+                        <img src="images/instructo-1.jpg" class="card-img-top" alt="Instructor Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="ih-1">Instructor 1</h5>
+                            <p class="card-text" id="ip-1" >Expert in Hatha Yoga with over 10 years of teaching experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Card 2 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card instructor-card hover-card">
+                        <img src="images/instructor-2.jpg" class="card-img-top" alt="Instructor Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="ih-2">Instructor 2</h5>
+                            <p class="card-text" id="ip-2">A seasoned practitioner of Ashtanga Yoga and mindfulness training.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Card 3 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card instructor-card hover-card">
+                        <img src="images/instructor4.jpg" class="card-img-top" alt="Instructor Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="ih-3">Instructor 3</h5>
+                            <p class="card-text" id="ip-3">Specializes in Vinyasa Flow and holistic wellness coaching.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section py-5 bg-dark text-light text-center">
+        <div class="container animate-on-scroll">
+            <h2>Ready to Start Your Yoga Journey?</h2>
+            <p>Join our yoga classes today and transform your body and mind.</p>
+            <a href="classes.html" class="btn btn-warning btn-lg">Join Us</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="about.js"></script>
+</body>
+</html>

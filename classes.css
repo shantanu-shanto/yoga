@@ -1,0 +1,78 @@
+/* Basic Color Theme */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8a87bd; /* Soft Beige */
+    color: #d5dfc9; /* Dark Slate Gray */
+}
+
+
+
+
+
+a:hover {
+    color: #008080; /* Teal on hover */
+}
+
+button {
+    background-color: #FFFACD; /* Lemon Chiffon buttons */
+    border: 1px solid #008080; /* Teal border */
+    color: #2F4F4F; /* Dark text */
+}
+
+button:hover {
+    background-color: #dac1c1; /* Light Coral on hover */
+    color: white;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.hero-section {
+    background-image: url('images/Classes.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+}
+
+/* Hover Effects for Class Cards */
+.hover-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Animation (Initially hidden) */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjust as needed for spacing */
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adjust as needed for spacing */
+}
+
+
